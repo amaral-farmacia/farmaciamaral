@@ -1,3 +1,10 @@
-// Script de login
-const user = 'admin';
-const pass = 'admin123';
+
+function login() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  if (user === "admin" && pass === "admin123") {
+    window.location.href = "index.html";
+  } else {
+    alert("Usuário ou senha inválidos");
+  }
+}
